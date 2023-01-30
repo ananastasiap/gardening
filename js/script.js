@@ -23,3 +23,15 @@ function showModalByTime (modalSelector, time) {
 }
 
 showModalByTime('.popup', 3000);
+
+function closeModal(closeSelector) {
+  document.addEventListener('click', (event) => {
+    if (event.target) {
+      event.preventDefault();
+    }
+
+    document.querySelector(closeSelector).style.display = 'none';
+  });
+}
+
+closeModal('.popup');
