@@ -6,10 +6,9 @@
 
 One-page website Plants about gardening services.
 
-<br>
-
 ### Self-study project from [RS School](https://rs.school/).
 
 It is necessary to make a website from Figma-layout. Add interactive elements, make responsive design (this stage is in progress).
 
 ### Preview
+![plants-layout](./images/plants.png)
