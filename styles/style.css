@@ -690,7 +690,6 @@ summary::-webkit-details-marker {
   left: 0;
   text-decoration: none;
   display: none;
-  z-index: 10;
 }
 
 .popup__body {
