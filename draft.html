@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    #menu {
+      display: none;
+}
+  </style>
+</head>
+<body>
+
+  <summary>City</summary>
+    <div id="menu">
+      <button id="btn1">Button 1</button>
+      <button id="btn2">Button 2</button>
+      <button id="btn3">Button 3</button>
+    </div>
+    <div id="text" style="display: none;">
+      <p>Random Text</p>
+    </div>
+
+  <script>
+    let menu = document.getElementById('menu');
+    let text = document.getElementById('text');
+    let btns = document.querySelectorAll('button');
+
+btns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    menu.style.display = (menu.style.display === 'none' ? 'block' : 'none');
+    text.style.display = (text.style.display === 'none' ? 'block' : 'none');
+  })
+});
+  </script>
+</body>
+</html>
+
+<!--
+1. Есть меню
+2. Оно выдвигается как аккордеон, но состоит из кнопок. Тег summary (в нём написано City), затем div, в div три кнопки.
+3. Кнопки (button) называются кнопка 1, кнопка 2, кнопка 3.
+4. Когда я нажимаю на кнопку, меню закрывается, но содержимое кнопки становится на первое место. Т.е. как в optional menu, но мне нужно такое именно с кнопками.
+5. После выбора кнопки внизу появляется div, в котором тег p с рандомным текстом. Таких div есть 3. Нажимаешь на кнопку 1, появляется div под номером 1. Нажимаешь на кнопку 2, появляется div под номером 2. Нажимаешь на кнопку 3, появляется div под номером 3. 
+6. Я нажимаю на меню, мне вновь оно открывается, а div из пункта 5 исчезает.
+7. Я опять выбираю кнопку. Жму. Меню закрывается, а внизу появляется div из пункта 5
+
+innerText?
+да я думал сделать через switch case тоже, но черт побери я не додумался как будет лучше сделать условие для swich где будет запускаться case
+
+1. There is a menu
+2. It slides out like an accordion, but consists of buttons. The summary tag (it says City), then a div, there are three buttons in the div.
+3. Buttons (button) are called button 1, button 2, button 3.
+4. When I click on the button, the menu closes, but the content of the button comes first. Those. as in the optional menu, but I need this with buttons.
+5. After selecting the button, a div appears below, in which the p tag with random text. There are 3 such divs. Click on button 1, div number 1 appears. Click on button 2, div number 2 appears. Click on button 3, div number 3 appears.
+6. I click on the menu, it reopens for me, and the div from point 5 disappears.
+7. I select the button again. I press. The menu closes and the div from point 5 appears at the bottom
+ -->
