@@ -668,13 +668,61 @@ summary::-webkit-details-marker {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .wrapper {
     width: 100%;
   }
 
+  /* HEADER media */
+
   .header {
-    padding: 35px 70px;
+    padding: 35px 50px;
+  }
+
+  .logo__img {
+    margin-bottom: -15px;
+  }
+
+  .menu__list-item,
+  .logo__text {
+    line-height: 50px;
+  }
+
+  /* WELCOME media */
+
+  .welcome__pic-leafs {
+    width: 280px;
+    height: 254.15px;
+  }
+
+  .welcome__title {
+    font-size: 35px;
+    line-height: 50px;
+    width: 341px;
+  }
+
+  .welcome__text {
+    font-size: 16px;
+    line-height: 25px;
+    width: 341px;
+  }
+
+  .welcome__wrapper {
+    padding: 40px 50px 70px 50px;
+    flex-direction: row-reverse;
+  }
+
+  .welcome__info {
+    width: 346px;
+    height: 310px;
+  }
+
+  /* ABOUT media */
+
+  /* SERVICE media */
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 38px 106px;
   }
 
 }
