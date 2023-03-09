@@ -690,26 +690,29 @@ summary::-webkit-details-marker {
 
   /* WELCOME media */
 
+  .welcome__wrapper {
+    padding: 40px 50px 70px 50px;
+    flex-direction: row-reverse;
+  }
+
   .welcome__pic-leafs {
     width: 280px;
     height: 254.15px;
+    margin-top: 0;
   }
 
   .welcome__title {
     font-size: 35px;
     line-height: 50px;
     width: 341px;
+    margin-top: 0;
   }
 
   .welcome__text {
     font-size: 16px;
     line-height: 25px;
     width: 341px;
-  }
-
-  .welcome__wrapper {
-    padding: 40px 50px 70px 50px;
-    flex-direction: row-reverse;
+    margin-top: 30px;
   }
 
   .welcome__info {
@@ -717,14 +720,107 @@ summary::-webkit-details-marker {
     height: 310px;
   }
 
+  .welcome__button {
+    margin-top: 30px;
+  }
+
   /* ABOUT media */
 
+  .about {
+    padding-bottom: 0;
+  }
+
+  .about__wrapper {
+    padding: 40px 50px 95px 50px;
+    justify-content: center;
+  }
+
+  .about__title {
+    font-size: 35px;
+    line-height: 46px;
+    text-align: center;
+    width: auto; /* ! change */
+    margin-top: 0;
+  }
+
+  .about__text {
+    width: 668px;
+  }
+
+  .housplant__about {
+    width: 250px;
+    height: 258px;
+    margin-top: 40px;
+  }
+
   /* SERVICE media */
+
+  .service {
+    padding: 60px 50px 32px 50px;
+  }
+
+  .service__title {
+    font-size: 35px;
+    line-height: 46px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+
+  .service__content-preview {
+    margin-bottom: 40px;
+  }
+
   .services {
     grid-template-columns: repeat(2, 1fr);
     gap: 38px 106px;
   }
 
+  .service-item {
+    width: 281px;
+  }
+
+  .service-item__img {
+    width: 281px;
+  }
+
+  /* PRICES */
+
+  .prices__wrapper {
+    padding: 40px 50px 88px 50px;
+  }
+
+  .prices__left h2 {
+    font-size: 35px;
+    line-height: 42px;
+    margin-bottom: 50px;
+  }
+
+  .prices__right h2 {
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 21.59px;
+  }
+
+  /* FOOTER media */
+  .footer__wrapper {
+    padding: 33px 279px 20px 279px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer__title {
+    line-height: 24px;
+    word-spacing: normal;
+    margin-bottom: 16px;
+  }
+
+  .footer__rsschool {
+    padding-left: 0;
+  }
+
+  .copyright-info {
+    margin-bottom: -5px;
+  }
 }
 
 /* POPUP */
