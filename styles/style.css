@@ -787,6 +787,7 @@ summary::-webkit-details-marker {
 
   .prices__wrapper {
     padding: 40px 50px 88px 50px;
+    flex-direction: row;
   }
 
   .prices__left h2 {
@@ -798,7 +799,9 @@ summary::-webkit-details-marker {
   .prices__right h2 {
     font-size: 25px;
     line-height: 35px;
+    margin-top: 99px;
     margin-bottom: 21.59px;
+    width: 296px;
   }
 
   /* CONTACTS media */
