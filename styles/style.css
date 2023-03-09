@@ -801,7 +801,35 @@ summary::-webkit-details-marker {
     margin-bottom: 21.59px;
   }
 
+  /* CONTACTS media */
+
+  .contacts__wrapper {
+    padding-top: 40px;
+    padding-left: 159px;
+    padding-right: 159px;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contacts__title {
+    order: 1;
+    margin-right: 0;
+  }
+
+  .contacts__pic-woman {
+    width: 200px;
+    height: 248.49px;
+    margin-right: 0;
+  }
+
+  .contacts__container {
+    margin: 0;
+    margin-bottom: 250px;
+  }
+
   /* FOOTER media */
+
   .footer__wrapper {
     padding: 33px 279px 20px 279px;
     flex-direction: column;
